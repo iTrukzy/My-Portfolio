@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+:root {
+    --nav-movil:  #ECF0F1;
+    --primary-color:#2C3E50 ;
+    --btn-back:  #D0D3D4;
+    --border-color: #B3B6B7;
+    --hover-color: #2980B9;
+}
+body {
+    background: rgb(48,49,245);
+    background: radial-gradient(circle, rgba(48,49,245,1) 0%, rgba(148,187,233,1) 100%); 
+    color: var(--primary-color);   
+}
+img {
+    width: 100%;
+}
+/* ========================== re-class ========================================
+
+*/
+
+.btn-btn {
+    padding: 7px;
+    border-radius: 5px;
+    background-color: var(--btn-back);
+    border: 1px solid var(--border-color);
+}
+
+.copy {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+}
+
+/* ========================== portfolio ========================================
+
+*/
+.portfolio {
+    height: 100vh;
+    padding: 10px;
+}
+@media only screen and (min-width: 768px) {
+    .portfolio {
+        margin-top: 6%;
+        height: 80vh;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .portfolio {
+        margin-left: 5%;
+        margin-top: 4%;
+        height: 80vh;
+    }
+}
+
+
+/* ========================== navbar desktop ========================================
+
+*/
+
+.navbar {
+    display: none;
+    position: relative;
+    margin: 10px;
+    height: 100vw;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+}
+.navbar-desktop {
+    display: none;
+    padding: 20px;
+}
+.navbar-desktop h2 {
+    font-size: 2rem;
+    width: 40px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--hover-color);
+}
+.navbar-desktop nav {
+    padding-top: 5rem;
+}
+.navbar-desktop ul li {
+    cursor: pointer;
+    margin-top: 2rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 1.2rem;
+}
+.navbar-desktop ul li:hover {
+    color: var(--hover-color);
+    transition: all .25s ease-in;
+    padding-left: 10px;
+}
+.navbar-desktop ul li i {
+    margin-right: 1rem;
+}
+@media only screen and (min-width: 768px) {
+    .navbar {
+        display: block;
+        height: 80vh;
+        opacity: 1;
+    }
+    .navbar-desktop {
+        display: block;
+        opacity: 1;
+    }
+}
+
+
+
+/* ========================== navbar movil ========================================
+
+*/
+
+
+.navbar-movil {
+    z-index: 1;
+    display: block;
+    background-color: var(--nav-movil);
+    width: 100%;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    height: 100%;
+    color: var(--primary-color);
+    transition: left .3s ease-in-out;
+}
+.navbar-movil {
+    padding: 20px;
+}
+.navbar-movil h2 {
+    font-size: 2rem;
+    width: 40px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--hover-color);
+}
+.navbar-movil nav {
+    padding-top: 5rem;
+}
+.navbar-movil ul li {
+    cursor: pointer;
+    margin-top: 2rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 1.2rem;
+}
+.navbar-movil ul li:hover {
+    color: var(--hover-color);
+    transition: all .25s ease-in;
+    padding-left: 10px;
+}
+.navbar-movil ul li i {
+    margin-right: 1rem;
+}
+.navbar-movil .close-menu {
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 1.4rem;
+}
+.navbar-movil .close-menu i:hover {
+    background-color: var(--hover-color);
+    color: #fff;
+    transition: all .25s ease-in-out;
+}
+
+
+
+
+/* ========================== main ========================================
+
+*/
+.main {
+    border-radius: 15px;
+    height: 97vh;
+    background-color: #f2f2f2;
+    position: relative;
+    text-align: center;
+}
+.main-body img {
+    margin-top: 8rem;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+}
+.main-body h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+.main-body p {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+}
+.main-body .social {
+    margin-top: 3rem;
+
+}
+.main-body .social i {
+    cursor: pointer;
+    width: 45px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+}
+.main-body .social i:hover {
+    background-color: var(--hover-color);
+    color: #fff;
+    transition: all .3s ease-in;
+}
+.main-body span {
+    color: var(--hover-color);
+}
+.main-body .open-menu {
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+.main-body .open-menu i {
+    font-size: 1.4rem;
+}
+.main-body .open-menu i:hover {
+    background-color: var(--hover-color);
+    color: #fff;
+    transition: all .25s ease-in-out;
+}
+
+@media only screen and (min-width: 768px) {
+    .main {
+        height: 80vh;
+        margin: 10px;
+    }
+    .open-menu {
+        opacity: 0;
+    }
+}
+
+
