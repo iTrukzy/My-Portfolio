@@ -26,7 +26,7 @@ img {
 .btn-btn {
     padding: 7px;
     border-radius: 5px;
-    background-color: var(--btn-back);
+    background-color: var(--hover-color);
     border: 1px solid var(--border-color);
 }
 
@@ -34,6 +34,12 @@ img {
     position: absolute;
     bottom: 2rem;
     left: 2rem;
+}
+.text-left {
+    text-align: left;
+}
+.margin-top {
+    margin-top: 2rem;
 }
 
 /* ========================== portfolio ========================================
@@ -81,13 +87,13 @@ img {
     border-bottom: 2px solid var(--hover-color);
 }
 .navbar-desktop nav {
-    padding-top: 5rem;
+    padding-top: 50%;
 }
 .navbar-desktop ul li {
     cursor: pointer;
     margin-top: 2rem;
     padding-bottom: .5rem;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--hover-color);
     font-size: 1.2rem;
 }
 .navbar-desktop ul li:hover {
@@ -118,7 +124,7 @@ img {
 
 
 .navbar-movil {
-    z-index: 1;
+    z-index: 2;
     display: block;
     background-color: var(--nav-movil);
     width: 100%;
@@ -145,7 +151,7 @@ img {
     cursor: pointer;
     margin-top: 2rem;
     padding-bottom: .5rem;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--hover-color);
     font-size: 1.2rem;
 }
 .navbar-movil ul li:hover {
@@ -157,6 +163,7 @@ img {
     margin-right: 1rem;
 }
 .navbar-movil .close-menu {
+    z-index: 1;
     cursor: pointer;
     position: absolute;
     right: 1rem;
@@ -176,6 +183,7 @@ img {
 
 */
 .main {
+    overflow: auto;
     border-radius: 15px;
     height: 97vh;
     background-color: #f2f2f2;
@@ -183,7 +191,7 @@ img {
     text-align: center;
 }
 .main-body img {
-    margin-top: 8rem;
+    margin-top: 20%;
     width: 220px;
     height: 220px;
     border-radius: 50%;
@@ -201,8 +209,9 @@ img {
 
 }
 .main-body .social i {
+    font-size: 2rem;
     cursor: pointer;
-    width: 45px;
+    width: 55px;
     padding: 10px;
     border-radius: 50%;
     border: 1px solid var(--border-color);
@@ -216,10 +225,11 @@ img {
     color: var(--hover-color);
 }
 .main-body .open-menu {
+    z-index: 1;
     cursor: pointer;
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
+    position: fixed;
+    right: 5rem;
+    top: 1.6rem;
 }
 .main-body .open-menu i {
     font-size: 1.4rem;
@@ -232,12 +242,145 @@ img {
 
 @media only screen and (min-width: 768px) {
     .main {
+        overflow: auto;
         height: 80vh;
         margin: 10px;
+        max-height: 100vh;
     }
     .open-menu {
         opacity: 0;
     }
+    .main-body img {
+        margin-top: 13%;
+    }
 }
 
 
+/* ========================== home ========================================
+
+*/
+
+.home {
+    display: none;
+}
+
+
+/* ========================== About ========================================
+
+*/
+.about {
+    position: relative;
+    padding: 0px 10px;
+    margin-top: -15px;
+}
+
+.about h2 {
+    text-align: left;
+    font-size: 2rem;
+    width: 200px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--hover-color);
+}
+.about .about-title {
+    align-items: center;
+}
+.about .button {
+    margin-right: 3rem;
+}
+.about button {
+    color: #f2f2f2;
+    font-weight: bold;
+    margin-top: .2rem;
+}
+.about button:hover {
+    color: var(--border-color);
+    cursor: pointer;
+    transition: all .25s var(--border-color)
+}
+@media only screen and (min-width: 690px) {
+    .about .about-title {
+        justify-content: space-between;
+    }
+}
+.about p {
+    line-height: 1.6rem;
+    margin-bottom: 1rem;
+}
+.about hr {
+    border: 1px solid var(--hover-color);
+    border-radius: 5px;
+}
+.about .dats {
+    border-bottom: 2px solid var(--hover-color);
+    padding-bottom: 1rem;
+}
+
+.html-css {
+    position: relative;
+    width: 16rem;
+    height: 16px;
+    background-color: var(--border-color);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.html-css span {
+    color: var(--back-color);
+}
+.html-css-fill {
+    width: 80%;
+    height: 100%;
+    background-color: var(--hover-color);
+    border-radius: 5px;
+}
+.html-css-text {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+}
+.js {
+    position: relative;
+    width: 16rem;
+    height: 16px;
+    background-color: var(--border-color);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.js span {
+    color: var(--back-color);
+}
+.js-fill {
+    width: 30%;
+    height: 100%;
+    background-color: var(--hover-color);
+    border-radius: 5px;
+}
+.js-text {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+}
+.react {
+    position: relative;
+    width: 16rem;
+    height: 16px;
+    background-color: var(--border-color);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.react span {
+    color: var(--back-color);
+}
+.react-fill {
+    width: 10%;
+    height: 100%;
+    background-color: var(--hover-color);
+    border-radius: 5px;
+}
+.react-text {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+}
