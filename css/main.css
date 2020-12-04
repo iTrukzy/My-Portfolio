@@ -11,6 +11,9 @@
     --border-color: #B3B6B7;
     --hover-color: #2980B9;
 }
+a {
+    color: var(--primary-color);
+}
 body {
     background: rgb(48,49,245);
     background: radial-gradient(circle, rgba(48,49,245,1) 0%, rgba(148,187,233,1) 100%); 
@@ -40,6 +43,16 @@ img {
 }
 .margin-top {
     margin-top: 2rem;
+}
+
+.active {
+    color: var(--hover-color);
+    border-bottom: 2px solid var(--hover-color);
+    font-weight: bold;
+}
+.hashtag {
+    color: var(--hover-color);
+    font-weight: bold;
 }
 
 /* ========================== portfolio ========================================
@@ -83,26 +96,28 @@ img {
 }
 .navbar-desktop h2 {
     font-size: 2rem;
-    width: 40px;
+    width: 120px;
     padding-bottom: 5px;
     border-bottom: 2px solid var(--hover-color);
 }
 .navbar-desktop nav {
     padding-top: 50%;
 }
-.navbar-desktop ul li {
+.navbar-desktop nav a {
+    display: block;
+    text-decoration: none;
     cursor: pointer;
     margin-top: 2rem;
     padding-bottom: .5rem;
     border-bottom: 1px solid var(--hover-color);
     font-size: 1.2rem;
 }
-.navbar-desktop ul li:hover {
+.navbar-desktop nav a:hover {
     color: var(--hover-color);
     transition: all .25s ease-in;
     padding-left: 10px;
 }
-.navbar-desktop ul li i {
+.navbar-desktop nav a i {
     margin-right: 1rem;
 }
 @media only screen and (min-width: 768px) {
@@ -141,26 +156,28 @@ img {
 }
 .navbar-movil h2 {
     font-size: 2rem;
-    width: 40px;
+    width: 120px;
     padding-bottom: 5px;
     border-bottom: 2px solid var(--hover-color);
 }
 .navbar-movil nav {
     padding-top: 5rem;
 }
-.navbar-movil ul li {
+.navbar-movil nav a {
+    text-decoration: none;
+    display: block;
     cursor: pointer;
     margin-top: 2rem;
     padding-bottom: .5rem;
     border-bottom: 1px solid var(--hover-color);
     font-size: 1.2rem;
 }
-.navbar-movil ul li:hover {
+.navbar-movil nav a:hover {
     color: var(--hover-color);
     transition: all .25s ease-in;
     padding-left: 10px;
 }
-.navbar-movil ul li i {
+.navbar-movil nav a i {
     margin-right: 1rem;
 }
 .navbar-movil .close-menu {
@@ -191,6 +208,9 @@ img {
     background-color: #f2f2f2;
     position: relative;
     text-align: center;
+}
+.main-body > section {
+    display: none;
 }
 .main-body img {
     margin-top: 20%;
@@ -231,7 +251,7 @@ img {
     cursor: pointer;
     position: absolute;
     right: 1rem;
-    top: 1rem;
+    top: -1rem;
 }
 .main-body .open-menu i {
     font-size: 1.4rem;
@@ -263,7 +283,7 @@ img {
 */
 
 .home {
-    display: none;
+    display: block;
 }
 
 
@@ -271,7 +291,7 @@ img {
 
 */
 .about {
-    display: block;
+    display: none;
     position: relative;
     padding: 0px 10px;
     margin-top: -15px;
@@ -393,10 +413,107 @@ img {
     padding: 20px;
     align-items: center;
     display: flex;
+    border-radius: 10px;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 }
 .skills-cards i {
     font-size: 2rem;
     color: var(--hover-color);
     margin-right: 1.3rem;
+}
+
+
+/* ========================== portfolio ========================================
+
+*/
+.works {
+    display: block;
+}
+.works h2 {
+    font-size: 2rem;
+    width: 200px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--hover-color);
+}
+.filter-work ul {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    position: sticky;
+    top: 0;
+    display: flex;
+    border-radius: 5px;
+    border-bottom: 1px solid var(--hover-color);
+}
+.filter-work ul li {
+    cursor: pointer;
+    padding: 15px 10px;
+}
+.filter-cards {
+    overflow: hidden;
+    text-align: center;
+}
+.filter-cards img {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    border-radius: 20px;
+}
+.filter-cards p {
+    margin-top: 1rem;
+    color: var(--hover-color);
+}
+
+/* ========================== contact ========================================
+
+*/
+.contact {
+    display: block;
+}
+.contact h2 {
+    font-size: 2rem;
+    width: 200px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--hover-color);
+}
+.form {
+    position: relative;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.form input {
+    padding: 10px;
+    border: 1px solid var(--hover-color);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.form input:focus {
+    outline: none;
+    border: 3px solid var(--hover-color) ;
+}
+.form textarea:focus {
+    outline: none;
+    border: 3px solid var(--hover-color) ;
+}
+.form textarea {
+    border: 1px solid var(--hover-color);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.form .button {
+    position: absolute;
+    right: 1.4rem;
+}
+.form button {
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    justify-content: right;
+}
+.form button:hover {
+    color: var(--border-color);
+    cursor: pointer;
+    transition: all .25s var(--border-color)
+}
+@media only screen and (min-width: 1500px) {
+    .form .button {
+        right: 8rem;
+    }
 }

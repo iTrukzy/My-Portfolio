@@ -12,31 +12,27 @@
     <div class="container">
         <div class="portfolio">
             <div class="navbar-movil">
-                <h2>Menu</h2>
+                <h2><span class="hashtag">#</span> Menu</h2>
                 <div class="close-menu">
                     <i class="fas fa-times btn-btn"></i>
                 </div>
-                <nav>
-                    <ul>
-                        <li><a href="#home"></a><i class="fas fa-home"></i>Home</li>
-                        <li><a href="#about"></a><i class="fas fa-address-card"></i>About</li>
-                        <li><a href="#works"></a><i class="fab fa-wordpress"></i>Works</li>
-                        <li><a href="#contact"></a><i class="fas fa-envelope"></i>Contact</li>
-                    </ul>
+                <nav>           
+                    <a class="home-nav" href="#home"><i class="fas fa-home"></i>Home</a>
+                    <a class="about-nav" href="#about"><i class="fas fa-address-card"></i>About</a>
+                    <a class="works-nav" href="#works"><i class="fas fa-briefcase"></i>Portfolio</a>
+                    <a class="contact-nav" href="#contact"><i class="fas fa-envelope"></i>Contact</a>        
                 </nav>
                 <p class="copy">© 2020 William Herrera.</p>
             </div>
             <div class="row">
                 <div class="navbar col-md-3 col-ld-3 col-lg-2">
                     <div class="navbar-desktop">
-                        <h2>Menu</h2>
-                        <nav>
-                            <ul>
-                                <li><a href="#home"></a><i class="fas fa-home"></i>Home</li>
-                                <li><a href="#about"></a><i class="fas fa-address-card"></i>About</li>
-                                <li><a href="#works"></a><i class="fab fa-wordpress"></i>Works</li>
-                                <li><a href="#contact"></a><i class="fas fa-envelope"></i>Contact</li>
-                            </ul>
+                        <h2><span class="hashtag">#</span> Menu</h2>
+                        <nav>           
+                            <a href="#home"><i class="fas fa-home"></i>Home</a>
+                            <a href="#about"><i class="fas fa-address-card"></i>About</a>
+                            <a href="#works"><i class="fas fa-briefcase"></i>Portfolio</a>
+                            <a href="#contact"><i class="fas fa-envelope"></i>Contact</a>        
                         </nav>
                         <p class="copy">© 2020 William Herrera.</p>
                     </div>
@@ -44,11 +40,11 @@
 
                 <div class="main col-md-8 col-ld-8 col-lg-9">
                     <div class="main-body">
-                        <div class="open-menu">
-                            <i class="fas fa-bars btn-btn"></i>
-                        </div>
+                        <p class="open-menu">
+                            <i class="fas fa-align-center btn-btn"></i>
+                        </p>
                         
-                        <div class="home" id="home">
+                        <section class="home" id="home">
                             <img src="./images/face2.jpeg" alt="my face">
                             <h2>William <span>Herrera</span></h2>
                             <p>I'm Web Developer</p>
@@ -57,12 +53,12 @@
                                 <i class="fab fa-twitter"></i>
                                 <i class="fab fa-instagram"></i>
                             </div>
-                        </div>
+                        </section>
 
 
-                        <div class="about text-left">
+                        <section id="about"  class="about text-left">
                             <div class="about-title row">
-                                <h2>About Me</h2>
+                                <h2><span class="hashtag">#</span> About Me</h2>
                                 <div class="button">
                                     <button class="btn-btn">Download CVC</button>
                                     <button class="btn-btn">Hire Me</button>
@@ -80,7 +76,7 @@
                                         <p><span>Country:</span> Colombian</p>
                                     </div>
                                     <div class="dats col-md-8 col-ld-6 col-lg-6 col-el-4">
-                                        <p><span>Ag;</span> 22</p>
+                                        <p><span>Age;</span> 22</p>
                                         <p><span>Email:</span> wjha.1998@hotmail.com</p>
                                         <p><span>Phone:</span> +57 311 435 1452</p>
                                         <p><span>Freelance:</span> Available</p>
@@ -111,7 +107,7 @@
                                         <div class="skills-cards ">
                                             <i class="fas fa-code"></i>
                                             <div>
-                                                <h3>Web Deleopment</h3>
+                                                <h3>Web Development</h3>
                                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, itaque!</p>
                                             </div>
                                         </div>
@@ -136,11 +132,52 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </section>
 
+                        <section id="works" class="works text-left">
+                            <h2><span class="hashtag">#</span> Portfolio</h2>
+                            <div class="filter-work margin-top">
+                                <ul>
+                                    <li class="active">All</li>
+                                    <li>Freelance</li>
+                                    <li>Companies</li>
+                                </ul>
+                                <div class="row">
+                                        <div class="filter-cards col-md-6 col-ld-6 col-lg-4 col-el-4">
+                                            <img src="./images/works1.jpg" alt="image of work">
+                                            <p>Freelance</p>
+                                        </div>
+                                        <div class="filter-cards col-md-6 col-ld-6 col-lg-4 col-el-4">
+                                            <img src="./images/works2.jpg" alt="image of work">
+                                            <p>Companies</p>
+                                        </div>
+                                        <div class="filter-cards col-md-6 col-ld-6 col-lg-4 col-el-4">
+                                            <img src="./images/works3.jpg" alt="image of work">
+                                            <p>Companies</p>
+                                        </div>
+                                        <div class="filter-cards col-md-6 col-ld-6 col-lg-4 col-el-4">
+                                            <img src="./images/works4.jpg" alt="image of work">
+                                            <p>Freelance</p>
+                                        </div>
+                                </div>
+                            </div>
+                        </section>
 
+                        <section id="contact" class="contact text-left">
+                            <h2><span class="hashtag">#</span> Contact Me</h2>
+                            <div class="form margin-top">
+                                <form id="form">
+                                    <input type="text" placeholder="Name..." class="col-md-12 col-ld-12 col-lg-12 col-el-5">
+                                    <input type="email" placeholder="Email..." class="col-md-12 col-ld-12 col-lg-12 col-el-5">
+                                    <input type="text" placeholder="Subject..." class="col-md-12 col-ld-12 col-lg-12 col-el-10">
+                                    <textarea id="form" cols="30" rows="10" placeholder="Your Message..." class="col-md-12 col-ld-12 col-lg-12 col-el-10"></textarea>
+                                </form>
+                                <div class="button">
+                                    <button class="btn-btn">Send Message</button>
+                                </div>
 
-
+                            </div>
+                        </section>
 
 
 
