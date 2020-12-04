@@ -69,6 +69,7 @@ img {
 */
 
 .navbar {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
     display: none;
     position: relative;
     margin: 10px;
@@ -183,6 +184,7 @@ img {
 
 */
 .main {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
     overflow: auto;
     border-radius: 15px;
     height: 97vh;
@@ -227,9 +229,9 @@ img {
 .main-body .open-menu {
     z-index: 1;
     cursor: pointer;
-    position: fixed;
-    right: 5rem;
-    top: 1.6rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
 }
 .main-body .open-menu i {
     font-size: 1.4rem;
@@ -269,6 +271,7 @@ img {
 
 */
 .about {
+    display: block;
     position: relative;
     padding: 0px 10px;
     margin-top: -15px;
@@ -310,10 +313,7 @@ img {
     border: 1px solid var(--hover-color);
     border-radius: 5px;
 }
-.about .dats {
-    border-bottom: 2px solid var(--hover-color);
-    padding-bottom: 1rem;
-}
+
 
 .html-css {
     position: relative;
@@ -383,4 +383,20 @@ img {
     top: 50%;
     right: 5px;
     transform: translateY(-50%);
+}
+
+.mySkills h2 {
+    width: 300px;
+    margin: 4rem 0;
+}
+.skills-cards {
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+.skills-cards i {
+    font-size: 2rem;
+    color: var(--hover-color);
+    margin-right: 1.3rem;
 }
