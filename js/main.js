@@ -62,3 +62,25 @@ document.querySelector(".works-nav").addEventListener("click", (e) => {
 document.querySelector(".contact-nav").addEventListener("click", (e) => {
     navMovil.style.left = "-100%";
 })
+
+
+const form = document.getElementById("form");
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const email = document.getElementById("email").value;
+    const name = document.getElementById("name").value;
+    const subject = document.getElementById("subject").value;
+    const message = document.getElementById("message").value;
+
+    
+
+    console.log(email);
+    console.log(name);
+    console.log(subject);
+    console.log(message);
+
+    form.reset();
+
+    return false;
+})

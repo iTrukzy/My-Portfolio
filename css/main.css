@@ -453,8 +453,13 @@ img {
     text-align: center;
 }
 .filter-cards img {
+    cursor: pointer;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
     border-radius: 20px;
+}
+.filter-cards img:hover{
+    transform: scale(1.1);
+    transition: transform .3s ease-in;
 }
 .filter-cards p {
     margin-top: 1rem;
