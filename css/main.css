@@ -511,7 +511,11 @@ img {
     right: 1.4rem;
 }
 .form button {
+    background-color: var(--hover-color);
+    padding: 10px;
     color: #fff;
+    border-radius: 10px;
+    border: none;
     font-weight: bold;
     display: flex;
     justify-content: right;
