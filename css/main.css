@@ -99,7 +99,7 @@ img {
 }
 .navbar-desktop h2 {
     font-size: 2rem;
-    width: 120px;
+    width: 150px;
     padding-bottom: 5px;
     border-bottom: 2px solid var(--hover-color);
 }
@@ -160,7 +160,7 @@ img {
 }
 .navbar-movil h2 {
     font-size: 2rem;
-    width: 120px;
+    width: 150px;
     padding-bottom: 5px;
     border-bottom: 2px solid var(--hover-color);
 }
